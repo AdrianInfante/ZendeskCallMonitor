@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zendesk Call Details</title>
+
+  <style>
+    body {
+      width: 300px; /* 300 */
+      height: 800px; /* 500 */
+      padding: 10px;
+      font-family: 'Arial', sans-serif;
+      font-weight: bold;
+      background-color: #16113a;
+      color: white;
+      overflow: hidden; /* Hide any overflow to prevent scrollbars */
+
+    }
+
+    .Title {
+      color: #ffffff;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .standby {
+      color: #2fa500;
+      text-align: center;
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    #callDetailsContainer {
+      background-color: #272953;
+      box-sizing: content-box;
+      padding: 10px;
+      border-radius: 8px;
+      overflow: hidden;
+      height: 420px;
+
+    }
+
+    .style1 {
+      color: white; 
+      margin-bottom: 10px;
+      
+    }
+
+    .style3 {
+      color: rgb(245, 139, 1);
+      margin-bottom: 10px;
+    }
+    .style4 {
+      color: white; 
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .style2 {
+      color: rgb(0, 0, 0); 
+      margin-bottom: 10px;
+    }
+
+    #callDetails {
+      max-height: 800px;
+
+    }
+
+    /* Hide the scrollbars */
+    ::-webkit-scrollbar {
+      width: 0;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      width: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="Title">Zendesk Call Monitor</h1>
+  <div id="callDetailsContainer">
+    <div id="callDetails" class="style1"></div>
+  </div>
+
+  <p id="requestBody" class="style4"></p>
+
+  <script src="popup.js"></script>
+</body>
+</html>

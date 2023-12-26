@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Zendesk Call Monitor",
+  "version": "1.0",
+  "description": "Monitors Zendesk voice calls",
+  "permissions": ["activeTab", "storage"],
+  
+  "icons": {
+    "16": "logo.png" ,   
+    "48": "logo.png" ,   
+    "128": "logo.png"   
+  },
+
+  "background": {
+    "service_worker": "background.js"
+  },
+  
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
