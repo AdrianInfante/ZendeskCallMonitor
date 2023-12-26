@@ -6,8 +6,8 @@
 
 The purpose of this project is for any Agent in Zendesk has the ability to easily see the notes field for a given organization or to modify it. 
 
-This program will display relevant call details in a popup, fetches and updates organization notes, and periodically updates
-call data in the background. The server acts as intermediary between the extension and Zendesk's API
+This web browser extension will display relevant call details in a popup, fetches and updates organization notes, and periodically updates
+call data in the background. The server acts as intermediary between the extension and Zendesk's API. Tested on Google Chrome, Microsoft Edge
 
 Server
 ------
