@@ -26,7 +26,7 @@ function makeZendeskAPICall() {
         const orgId = call.customer.organization_id;
       
         console.log('Fetching data from:', serverEndpoint); 
-        fetch(`http://10.253.0.95:3000/organization-details/${orgId}`)
+        fetch(`http://10.253.0.95:3000/organization-details/${orgId}`) // Update the IP address
           .then(orgDetailsResponse => orgDetailsResponse.json())
           .then(orgDetails => {
             // Merge organization details with the existing call data
