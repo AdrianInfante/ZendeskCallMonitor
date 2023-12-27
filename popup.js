@@ -44,10 +44,6 @@ document.addEventListener('DOMContentLoaded', function () {
             .then(orgData => {
               const organizationName = orgData.name;
 
-              // Update the organization name in the HTML
-              //const organizationNameElement = callDetailsElement.querySelector('.organizationName');
-              //organizationNameElement.innerText = organizationName;
-
               const notes = orgData.notes;
               if (notes !== undefined) {
                 // Display Notes in the popup
